@@ -12,7 +12,7 @@ deployment_config:
   max_concurrent_queries: 3000
   ray_actor_options:
     resources:
-      accelerator_type_cpu: 0.01
+      accelerator_type_cpu: 0.0
 model_config:
   model_id: OpenAssistant/falcon-7b-sft-top1-696
   batching: continuous
@@ -50,4 +50,4 @@ scaling_config:
   num_cpus_per_worker: 8
   placement_strategy: "STRICT_PACK"
   resources_per_worker:
-    accelerator_type_a10: 0.01
+    accelerator_type_a10: 0.0
